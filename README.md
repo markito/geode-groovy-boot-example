@@ -68,7 +68,8 @@ Note the difference in the the PdxType output:
         id:int:0:idx0(relativeOffset)=0:idx1(vlfOffsetIndex)=0
         name:String:1:idx0(relativeOffset)=4:idx1(vlfOffsetIndex)=-1
         lastname:String:2:1:idx0(relativeOffset)=0:idx1(vlfOffsetIndex)=1
-        email:String:3:2:idx0(relativeOffset)=0:idx1(vlfOffsetIndex)=2]]```
+        email:String:3:2:idx0(relativeOffset)=0:idx1(vlfOffsetIndex)=2]]
+```
 
 ### Consumer
 
@@ -81,12 +82,14 @@ spring run Consumer.groovy -- --locatorHost=localhost --locatorPort=10334
 Change the definition of the Person entity on the Consumer.groovy and note how PDX handled the missing/added fields.
 
 Consumer with `city` field:
+
 ```
 Person(97, Ernő {97}, null, null, Budapest)
 Person(98, Ernő {98}, null, null, Budapest)
 ```
 
 Consumer without `city` field:
+
 ```
 Person(97, Ernő {97}, null, null)
 Person(98, Ernő {98}, null, null)
