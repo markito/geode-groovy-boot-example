@@ -34,7 +34,7 @@ class Person {
 ```
 ### Starting Apache Geode
 
-Replace the GEODE_HOME variable in the startGeode.sh.
+Update the `GEODE_HOME` variable in the `startGeode.sh`.
 
 Run `startGeode.sh` on a terminal. It's goingto start a locator and a server with a single [PARTITIONED](http://geode.docs.pivotal.io/docs/developing/partitioned_regions/chapter_overview.html) region named `Person`.
 
